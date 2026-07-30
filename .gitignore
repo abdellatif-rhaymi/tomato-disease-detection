@@ -1,0 +1,40 @@
+# Environnements virtuels Python (NE JAMAIS committer — plusieurs centaines de Mo)
+tf214_env/
+tf24_env/
+venv/
+.venv/
+env/
+
+# Caches Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Datasets et sorties volumineuses (à ne pas versionner)
+dataset/
+data/
+train/
+val/
+test/
+output_tflite/
+
+# Secrets / identifiants cloud (IMPORTANT)
+*.json
+!package.json
+serviceAccount*.json
+gcp-key*.json
+.env
+
+# Modèles lourds — décommente si un fichier dépasse ~100 Mo (limite GitHub)
+# *.h5
+# *.keras
+
+# PDF sources à la racine (versions propres dans docs/)
+Projet S4 Rapport.pdf
+Pr*sentation*.pdf
+
+# Rapport PDF (ne pas publier)
+docs/rapport.pdf

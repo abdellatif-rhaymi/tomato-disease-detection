@@ -1,0 +1,23 @@
+# Utilise une image Python officielle comme base
+FROM python:3.9-slim
+
+# Définit le répertoire de travail dans le conteneur
+WORKDIR /app
+
+# Copie le fichier des exigences pour installer les dépendances
+COPY requirements.txt .
+
+# Met à jour pip et installe les dépendances Python
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
+
+# Copie le modèle Keras et le script de conversion dans l'image
+COPY finetuned_best_model.h5 .
+COPY convert_keras_to_tflite.py .
+
+# Optionnel: Crée le dossier de sortie attendu par le script
+RUN mkdir output
+
+# Définit la commande à exécuter lorsque le conteneur démarre
+# (Ici, on exécute directement le script de conversion)
+CMD ["python", "convert_keras_to_tflite.py"]

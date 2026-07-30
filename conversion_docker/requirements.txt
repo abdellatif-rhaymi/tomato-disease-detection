@@ -1,0 +1,4 @@
+tensorflow==2.14.0
+numpy==1.24.3
+# Ajoute h5py si tu utilises le format .h5 au lieu de .keras
+# h5py

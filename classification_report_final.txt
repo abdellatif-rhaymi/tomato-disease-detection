@@ -1,0 +1,18 @@
+Rapport de Classification pour le Set de Test
+Accuracy globale (calculée): 0.9702
+                               precision    recall  f1-score   support
+
+        Tomato Bacterial spot     0.9738    0.9648    0.9693       654
+          Tomato Early blight     0.9392    0.9159    0.9274       523
+               Tomato Healthy     0.9837    0.9918    0.9877       609
+           Tomato Late blight     0.9826    0.9553    0.9688       649
+             Tomato Leaf Mold     0.9570    0.9608    0.9589       510
+          Tomato Mosaic virus     0.9898    0.9749    0.9823       399
+    Tomato Septoria leaf spot     0.9403    0.9724    0.9560       615
+          Tomato Spider mites     0.9827    0.9827    0.9827       579
+           Tomato Target Spot     0.9603    0.9603    0.9603       554
+Tomato Yellow Leaf Curl Virus     0.9816    0.9941    0.9878      1183
+
+                     accuracy                         0.9702      6275
+                    macro avg     0.9691    0.9673    0.9681      6275
+                 weighted avg     0.9703    0.9702    0.9702      6275

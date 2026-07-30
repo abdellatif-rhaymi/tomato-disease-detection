@@ -1,0 +1,5 @@
+Flask==2.3.3  # Ou une version récente
+tensorflow==2.16.1 # Utilise une version récente de TF pour le serveur (ou celle avec laquelle le modèle a été entraîné)
+Pillow==10.0.0 # Pour la manipulation d'images
+numpy
+# gunicorn # Souvent utilisé pour servir Flask en production sur Cloud Run
