@@ -2,7 +2,7 @@
 
 Système intelligent complet pour la culture de la tomate, combinant **deep learning** (diagnostic des maladies de la feuille par photo) et **IoT** (surveillance environnementale en temps réel). Le modèle **MobileNetV2** est servi par une **API REST (Flask)** conteneurisée avec **Docker** et déployée sur **Google Cloud Run**, et une chaîne de capteurs **ESP8266** remonte les conditions environnementales vers **Firebase**. Le tout est piloté depuis une **application Android**.
 
-> 📱 **Application Android associée :** [abdellatif-rhaymi/TomateApp](https://github.com/abdellatif-rhaymi/TomateApp)
+> 📱 **Application Android associée :** [abdellatif-rhaymi/TomateApp](https://github.com/abdellatif-rhaymi/tomato-disease-detection-android-app)
 
 ---
 
@@ -112,7 +112,7 @@ Capteurs **DHT11** (température/humidité) et **LDR** (luminosité) reliés à 
 | **Cloud & Déploiement** | Docker · Cloud Build · Artifact Registry · **Google Cloud Run** (serverless) |
 | **IoT** | ESP8266 · capteur DHT11 (temp./humidité) · LDR (luminosité) · WiFi |
 | **Backend données** | Firebase (Realtime Database, Auth) |
-| **Mobile** | Android (Java) — [repo dédié](https://github.com/abdellatif-rhaymi/TomateApp) |
+| **Mobile** | Android (Java) — [repo dédié](https://github.com/abdellatif-rhaymi/tomato-disease-detection-android-app) |
 
 ## 📁 Structure du dépôt
 
